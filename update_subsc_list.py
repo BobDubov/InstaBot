@@ -71,7 +71,7 @@ def log_in(username, password):
         if browser.find_element_by_css_selector("div[aria-label='Ваши подписки']"):
             time.sleep(2)
             print('Нашли список подписок')
-            for step in range(150):
+            for step in range(250):
                 div_subscr = browser.find_element_by_css_selector(
                     "div[aria-label='Ваши подписки']").find_elements_by_css_selector('button.sqdOP')[-1]
                 time.sleep(1)
